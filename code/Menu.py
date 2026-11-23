@@ -10,7 +10,7 @@ class Menu:
 
     def __init__(self, window):
         self.window = window
-        self.surface = pygame.image.load("./asset/MenuBg.png")
+        self.surface = pygame.image.load("./asset/MenuBg.png").convert_alpha()
         self.rectangle = self.surface.get_rect(left=0, top=0)
 
     def run(self):
